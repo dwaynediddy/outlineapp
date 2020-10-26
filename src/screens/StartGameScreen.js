@@ -6,7 +6,7 @@ import {
     Button, 
     TouchableWithoutFeedback,
     Keyboard,
-    Alert
+    Alert,
      } from 'react-native'
 
 import Card from '../components/Card'
@@ -15,7 +15,7 @@ import Input from '../components/Input'
 import NumberContainer from '../components/NumberContainer'
 
 const StartGameScreen = props => {
-    //need to save numbers?? 
+    //need to save numbers
     const [enteredValue, setEnteredValue] = useState('')
     const [confirmed, setConfirmed] = useState(false)
     const [selectedNumber, setSelectedNumber] = useState()
@@ -68,8 +68,8 @@ const StartGameScreen = props => {
                     blurOnSubmit 
                     autoCapitalize='none' 
                     autoCorrect={false}
-                    //number pad not showing up
-                    keyboardType='number-pad' //no idea why tf this doesnt work
+                    //number pad not showing up althought not showing up anywhere in xcode
+                    keyboardType='number-pad' 
                     maxLength={2}
                     onChangeText={numberInputHandler}
                     value={enteredValue}

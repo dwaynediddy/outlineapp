@@ -21,7 +21,7 @@ import GameOverScreen from './src/screens/GameOverScreen'
 function App () {
   const [userNumber, setUserNumber] = useState()
   const [guessRounds, setGuessRounds] = useState(0)
-
+//starting fresh when a games complete
   const configureNewGame = () => {
     setGuessRounds(0)
     setUserNumber(null)
