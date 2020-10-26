@@ -68,7 +68,6 @@ const StartGameScreen = props => {
                     blurOnSubmit 
                     autoCapitalize='none' 
                     autoCorrect={false}
-                    //number pad not showing up althought not showing up anywhere in xcode
                     keyboardType='number-pad' 
                     maxLength={2}
                     onChangeText={numberInputHandler}
